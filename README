@@ -1,0 +1,25 @@
+
+== LoadOrRequire
+
+  What's the proper way to load a file in rails?
+  
+    require  => wrong
+    load     => wrong
+    autoload => who knows
+  
+  It all depends on your environment settings.  Some env's have cache_classes = true (e.g., production, 
+  which uses require), others have cache_classes = false (e.g. development, for auto-reloading).
+
+== Usage
+
+   load_or_require "my_file"
+
+== Author
+
+  Scott Taylor <scott@railsnewbie.com>
+
+  Development sponsored by EastMedia (http://eastmedia.com/)
+
+== License
+  
+  Dual licensed under MIT and GPL2
